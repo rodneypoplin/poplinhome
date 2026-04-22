@@ -17,7 +17,7 @@ before anything goes to a carrier reviewer.
 | `terms.html` | State of governing law | Texas |
 | `terms.html` | Last updated | needs date at publish |
 | `contact.html` | Full legal name | Rodney Poplin |
-| `contact.html` | Best email | rod@mhservices.com |
+| `contact.html` | Best email | rodneypoplin@gmail.com |
 | `contact.html` | Postal address | blank — add if needed |
 
 ## Quick search-and-replace
@@ -34,7 +34,7 @@ sed -i '' 's/Texas<\/strong> \[REVIEW — confirm home state\]/Texas<\/strong>/g
 # Confirm cell
 sed -i '' 's/+1&nbsp;210&nbsp;303&nbsp;9300<\/strong> \[REVIEW — confirm cell\]/+1&nbsp;210&nbsp;303&nbsp;9300<\/strong>/g' *.html
 # Confirm email
-sed -i '' 's/rod@mhservices.com<\/a> \[REVIEW — confirm best email\]/rod@mhservices.com<\/a>/g' *.html
+sed -i '' 's/rodneypoplin@gmail.com<\/a> \[REVIEW — confirm best email\]/rodneypoplin@gmail.com<\/a>/g' *.html
 # Set today's date
 TODAY=$(date '+%B %d, %Y')
 sed -i '' "s/\[REVIEW — will be set at first publish\]/$TODAY/g" *.html
